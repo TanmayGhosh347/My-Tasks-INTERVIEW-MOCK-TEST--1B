@@ -104,7 +104,7 @@ class App extends Component {
         <TaskInputContainer>
           <Heading>Create a Task!</Heading>
           <InputContainer>
-            <LabelText for="textInput">Task</LabelText>
+            <LabelText for="textInput">Tasks</LabelText>
             <Input
               id="textInput"
               type="text"
@@ -147,6 +147,7 @@ class App extends Component {
             })}
           </TagsContainer>
           <TasksContainer>
+            <TagsHeading>Tasks</TagsHeading>
             {filterTaskList.length === 0 ? (
               <NoTaskText>No Tasks Added Yet</NoTaskText>
             ) : (
